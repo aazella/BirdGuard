@@ -11,7 +11,7 @@ lgpio.gpio_claim_output(chip, LED_PIN)
 lgpio.gpio_write(chip, LED_PIN, 0)
 
 # ================== YOLO LOAD ===================
-model = YOLO("pimodelv1.pt")
+model = YOLO("pimodelv1.1.pt")
 
 # ================== SHARED STATE ================
 latest_frame = None
