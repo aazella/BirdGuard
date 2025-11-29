@@ -89,13 +89,17 @@ No hardware required.
 
 ---
 
-## 🟢 Raspberry Pi Deployment (Real-Time LED)
-
 ### Hardware requirements:
 - Raspberry Pi  
 - LED connected to GPIO pin 17  
 - Camera module (PiCam or USB Camera preferably with 10x zoom)  
 - `lgpio` installed  
+
+> **Camera focus note (important):** The camera currently used **must have its focus adjusted** using the **lever closest to the base of the camera**. Adjust it until the live preview is sharp.
+
+### ✅ Auto-start (illegal mode on boot)
+BirdGuard includes a **bash script** that runs the **illegal-mode detector automatically on startup**.  
+On boot, it **blinks the LED 3 times** to confirm everything is working, then launches the illegal detection pipeline.
 
 ### Illegal-mode:
 ```bash
